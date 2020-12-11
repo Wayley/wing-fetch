@@ -1,0 +1,38 @@
+{
+  "name": "wing-fetch",
+  "version": "0.0.1",
+  "description": "a tool for fetch request",
+  "main": "dist/wing-fetch.es.js",
+  "module": "dist/wing-fetch.es.js",
+  "unpkg": "dist/wing-fetch.js",
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wayley/wing-fetch.git"
+  },
+  "keywords": [
+    "fetch",
+    "wing",
+    "request"
+  ],
+  "author": {
+    "name": "Robben Wayley",
+    "email": "hb_wangzheng@163.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wayley/wing-fetch/issues"
+  },
+  "homepage": "https://github.com/Wayley/wing-fetch#readme",
+  "devDependencies": {
+    "rollup": "^2.34.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
