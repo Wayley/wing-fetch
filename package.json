@@ -11,7 +11,8 @@
     "es"
   ],
   "scripts": {
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "examples": "cd ./examples && yarn install && yarn start"
   },
   "repository": {
     "type": "git",

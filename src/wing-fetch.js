@@ -1,6 +1,22 @@
-export function fetchFormPost() {
-  console.log('fetch form post');
+const requestInterceptor = [
+  (configs) => configs,
+  (error) => Promise.reject(error),
+];
+const responseInterceptor = [
+  (response) => response,
+  (error) => Promise.reject(error),
+];
+
+const defaultOptions = {
+  baseUrl: '',
+  interceptors: { request: requestInterceptor, response: responseInterceptor },
+};
+
+const assign = Object.assign;
+
+export function WingFetch(options) {
+  this.options = assign(defaultOptions, options || {});
 }
-export default function fetch() {
-  console.log('fetch');
-}
+WingFetch.prototype.request = function ({ url, method }) {};
+
+export default WingFetch;

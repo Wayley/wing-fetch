@@ -1,0 +1,35 @@
+{
+  "name": "wing-fetch-examples",
+  "main": "index.html",
+  "scripts": {
+    "start": "cross-env PORT=8080 http-server . --cors"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "http-server": "^0.12.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
