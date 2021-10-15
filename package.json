@@ -6,9 +6,7 @@
   "module": "dist/wing-fetch.es.js",
   "unpkg": "dist/wing-fetch.js",
   "files": [
-    "dist",
-    "lib",
-    "es"
+    "dist"
   ],
   "scripts": {
     "build": "rollup --config"
